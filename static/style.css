@@ -27,7 +27,7 @@
 
 #navbar {
     padding: 1em;
-    width: 100%;
+    width: 80%;
     display: flex;
     justify-content: space-around;
 }
