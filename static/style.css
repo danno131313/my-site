@@ -4,7 +4,7 @@
 }
 
 #wrapper {
-    width: 80%;
+    width: 60%;
     background: lightgrey;
 }
 
@@ -33,7 +33,7 @@
 }
 
 #wrapper {
-    padding: 20px;
+    padding: 20px 20%;
 }
 
 #wrapper p {
