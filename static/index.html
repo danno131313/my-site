@@ -20,21 +20,42 @@
         <div id="header">
             <h1 class="title is-1">Daniel Kavanagh</h1>
             <h3 class="subtitle">Software Engineer</h3>
-            <div id="navbar" class="ui pointing three item secondary menu">
-                <a class="item active" href="/">Home</a>
-                <div class="item">
-                    <i class="fab fa-github"></i>
-                    <a href="https://github.com/danno131313">Github</a>
+            <div id="navbar" class="ui pointing four item secondary menu">
+                <a class="ui item active" href="/">Home</a>
+                <div class="ui selection dropdown item">
+                    My Projects
+                    <div class="menu">
+                        <a class="item" href="http://userdashboard.dankava.com/">User Dashboard</a>
+                    </div>
                 </div>
-                <div class="item">
+                <div class="ui item">
+                    <i class="fab fa-github"></i>
+                    <a href="https://github.com/danno131313">
+                        Github
+                    </a>
+                </div>
+                <div class="ui item">
                     <i class="fab fa-linkedin"></i>
-                    <a href="https://www.linkedin.com/in/danny-kavanagh-a1229596/">Linkedin</a>
+                    <a href="https://www.linkedin.com/in/danny-kavanagh-a1229596/">
+                        LinkedIn
+                    </a>
                 </div>
             </div>
         </div>
         <div id="wrapper">
             <h3 class="title is-3">About me</h3>
-            <p>Hi, my name is Daniel Kavanagh and I'm a software developer specializing in full stack web development in Bellingham, WA.</p>
+            <img class="ui small rounded image" src="me.jpg" alt=""/>
+            <div id="aboutme">
+                <p>
+                    Hi, my name is Daniel Kavanagh and I'm a software engineer specializing in full stack web development in Bellingham, WA.
+                </p>
+                <p>
+                    Programming is one of my main passions, right alongside music. I've always loved building things, from houses made of Lego when I was little, to the multi-part webapps incorperating different frameworks and libraries/tools I build now. The satisfaction from building a functioning app with clean, concise code is the entire reason I program; it doesn't matter what I'm working on, I'll have fun working on it regardless!
+                </p>
+            </div>
         </div>
     </body>
+    <script charset="utf-8">
+        $('.ui.dropdown').dropdown();
+    </script>
 </html>

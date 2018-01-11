@@ -15,6 +15,15 @@
     height: 20%;
 }*/
 
+#aboutme p {
+    padding: 10px 0 0 0;
+}
+
+img {
+    height: auto;
+    width: 40%;
+}
+
 #header {
     padding: 3% 3% 0 3%;
     background: lightgrey;
@@ -30,6 +39,7 @@
     width: 80%;
     display: flex;
     justify-content: space-around;
+    border: none;
 }
 
 #wrapper {
