@@ -47,7 +47,7 @@
                         <a class="ui item active" href="/">Home</a>
                         <div class="ui left pointing dropdown item">
                             My Projects
-                            <div class="menu">
+                            <div id="projectmenu" class="menu">
                                 <a class="item" href="http://userdashboard.dankava.com/">User Dashboard</a>
                             </div>
                         </div>
@@ -87,5 +87,6 @@
     </body>
     <script charset="utf-8">
         $('.ui.dropdown').dropdown();
+        $('#projectmenu').dropdown({on: 'click'});
     </script>
 </html>
