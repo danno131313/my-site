@@ -2,6 +2,23 @@
     padding: 10px 0 0 0;
 }
 
+#myprojects h3 {
+    margin-bottom: 2em;
+}
+
+.projectlink {
+    margin: 2em 0 1em 0;
+    display: inline-block;
+    color: black;
+    font-weight: bold;
+    font-size: 1.1em;
+}
+
+#dashboardpic {
+    width: 100%;
+    height: auto;
+}
+
 body {
     background: lightgrey;
 }
@@ -14,6 +31,10 @@ img {
 .link {
     padding-left: 3px;
     color: black;
+}
+
+#homebtn:hover {
+    font-weight: bold;
 }
 
 #header {
@@ -43,7 +64,7 @@ img {
     font-family: 'Roboto', sans-serif;
 }
 
-#wrapper {
+.contentbox {
     background: white;
     margin: 5%;
     border: 1px solid black;
@@ -73,7 +94,7 @@ img {
         width: 100%;
     }
 
-    #wrapper {
+    .contentbox {
         padding: 5%;
     }
 }
@@ -100,12 +121,12 @@ img {
         display: none;
     }
 
-    #wrapper {
+    .contentbox {
         padding: 20px 10%;
     }
 }
 
 
-#wrapper p {
+.contentbox p {
     margin-bottom: 15px;
 }
