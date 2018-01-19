@@ -24,7 +24,7 @@
                 <div class="ui dropdown left item">
                     My Projects
                     <div class="menu">
-                        <p id="dashboardlink" class="item">User Dashboard</p>
+                        <p class="dashboardlink" class="item">User Dashboard</p>
                     </div>
                 </div>
                 <div class="ui item">
@@ -48,7 +48,7 @@
                         <div id="projectmenu" class="ui left pointing dropdown item">
                             My Projects
                             <div class="menu">
-                                <a class="item" href="http://userdashboard.dankava.com/">User Dashboard</a>
+                                <p class="item dashboardlink" >User Dashboard</p>
                             </div>
                         </div>
                         <div class="ui item">
@@ -97,8 +97,8 @@
     </body>
     <script charset="utf-8">
         $('.ui.dropdown').dropdown({on: 'hover'});
-        $('#projectmenu').dropdown({action: 'select'});
-        $('#dashboardlink').click(function() {
+        //$('#projectmenu').dropdown({action: 'select'});
+        $('.dashboardlink').click(function() {
             location.hash = 'dashboardproject';
         });
     </script>
