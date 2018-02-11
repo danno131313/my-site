@@ -24,7 +24,7 @@
                 <div class="ui dropdown left item">
                     My Projects
                     <div class="menu">
-                        <p class="dashboardlink" class="item">User Dashboard</p>
+                        <p class="dashboardlink item">User Dashboard</p>
                     </div>
                 </div>
                 <div class="ui item">
@@ -69,7 +69,7 @@
             <h1 class="title is-1">Daniel Kavanagh</h1>
             <h3 class="subtitle">Software Engineer</h3>
         </div>
-        <div id="aboutme" class="contentbox">
+        <div class="contentbox">
             <h3 class="title is-3">About me</h3>
             <img class="ui small rounded image" src="me.jpg" alt="Self photo"/>
             <div id="aboutme">
@@ -96,7 +96,7 @@
         </div>
     </body>
     <script charset="utf-8">
-        $('.ui.dropdown').dropdown({on: 'hover'});
+        $('.dropdown').dropdown({on: 'hover'});
         $('#projectmenu').dropdown({action: 'nothing'});
         $('.dashboardlink').click(function() {
             location.hash = 'dashboardproject';

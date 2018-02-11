@@ -13,7 +13,6 @@ fn index() -> Option<NamedFile> {
 
 #[get("/semantic/<file..>")]
 fn semantic(file: PathBuf) -> Option<NamedFile> {
-    println!("{:?}", file);
     NamedFile::open(Path::new("semantic/").join(file)).ok()
 }
 
