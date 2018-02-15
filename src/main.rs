@@ -11,6 +11,11 @@ fn index() -> Option<NamedFile> {
     NamedFile::open("static/index.html").ok()
 }
 
+#[get("/aboutme")]
+fn about_me() -> Option<NamedFile> {
+    NamedFile::open("static/about_me.html").ok()
+}
+
 #[get("/<file..>")]
 fn files(file: PathBuf) -> Option<NamedFile> {
     NamedFile::open(Path::new("static/").join(file)).ok()
