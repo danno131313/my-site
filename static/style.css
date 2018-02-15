@@ -88,6 +88,7 @@ i {
     }
 
     #hamburgermenu {
+        text-align: left;
         padding: 0 0 10px 10px;
         justify-self: end;
         width: 100%;
