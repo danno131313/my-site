@@ -4,6 +4,15 @@
     display: flex;
 }
 
+body {
+    height: 100%;
+    width: 100%;
+}
+
+#sidemenu {
+    border-radius: none;
+}
+
 #content {
     background-image: url("code_blurred.png");
     background-size: cover;
@@ -12,7 +21,6 @@
     align-items: center;*/
     height: 100%;
     width: 100%;
-    overflow-y: hidden;
 }
 
 #content span {
@@ -35,7 +43,8 @@ i {
 .pusher {
     display: block;
     background: #303030;
-    height: 100vh;
+    min-height: 500px;
+    height: 100%;
     overflow: hidden;
 }
 
@@ -61,7 +70,7 @@ i {
     font-family: 'Roboto', sans-serif;
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 767px) {
     #sidebar {
         display: none;
     }
@@ -95,10 +104,13 @@ i {
     }
 }
 
-@media only screen and (min-width: 481px) {
+@media only screen and (min-width: 768px) {
     #header {
-        min-height: 150px;
-        height: 16%;
+        height: 150px;
+    }
+
+    #wrapper {
+        min-height: 500px;
     }
 
     #header h1 {
