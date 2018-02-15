@@ -18,68 +18,73 @@
         <link rel="stylesheet" href="style.css" type="text/css" media="screen" charset="utf-8">
     </head>
     <body>
-        <div id="header">
-            <!--<div id="hamburgermenu">
-                <div class="ui dropdown left item">
-                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-                    <div class="left menu">
-                        <a class="ui item active" id="homebtn" href="/">Home</a>
-                        <div id="projectmenu" class="ui left pointing dropdown item">
-                            My Projects
-                            <div class="menu">
-                                <p class="item dashboardlink" >User Dashboard</p>
-                            </div>
-                        </div>
-                        <div class="ui item">
-                            <i class="fab fa-github"></i>
-                            <a href="https://github.com/danno131313">
-                                Github
-                            </a>
-                        </div>
-                        <div class="ui item">
-                            <i class="fab fa-linkedin"></i>
-                            <a href="https://www.linkedin.com/in/danny-kavanagh-a1229596/">
-                                LinkedIn
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>-->
-            <h1 class="title is-1">Daniel Kavanagh</h1>
-            <h3 class="subtitle">Software Engineer</h3>
-        </div>
-        <div id="wrapper">
-            <div id="sidebar">
-                <div id="sidemenu" class="ui vertical menu">
-                    <a href="/" class="item active">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <a href="/aboutme" class="item">
-                        <i class="fas fa-user"></i>
-                        About Me
-                    </a>
-                    <div class="item">
-                        <i class="fas fa-code"></i>
-                        My Projects
-                        <div class="menu">
-                            <a href="#" class="item project_link">User Dashboard</a>
-                            <a href="#" class="item project_link">Egyptian War</a>
-                        </div>
-                    </div>
-                    <a href="https://github.com/danno131313" class="item">
-                        <i class="fab fa-github"></i>
-                        Github
-                    </a>
-                    <a href="https://www.linkedin.com/in/dankava13/" class="item">
-                        <i class="fab fa-linkedin-in"></i>
-                        LinkedIn
-                    </a>
+        <div class="ui sidebar inverted vertical menu">
+            <a href="/" class="item active">
+                <i class="fas fa-home"></i>
+                Home
+            </a>
+            <a href="/aboutme" class="item">
+                <i class="fas fa-user"></i>
+                About Me
+            </a>
+            <div class="item">
+                <i class="fas fa-code"></i>
+                My Projects
+                <div class="menu">
+                    <a href="#" class="item project_link">User Dashboard</a>
+                    <a href="#" class="item project_link">Egyptian War</a>
                 </div>
             </div>
-            <div id="content">
-                <h1><span>exceptional</span> software</h1>
-                <h1>that just <span>works.</span></h1>
+            <a href="https://github.com/danno131313" class="item">
+                <i class="fab fa-github"></i>
+                Github
+            </a>
+            <a href="https://www.linkedin.com/in/dankava13/" class="item">
+                <i class="fab fa-linkedin-in"></i>
+                LinkedIn
+            </a>
+        </div>
+        <div class="pusher">
+            <div id="header">
+                <h1 class="title is-1">Daniel Kavanagh</h1>
+                <h3 class="subtitle">Software Engineer</h3>
+                <div id="hamburgermenu" class="ui dropdown left item">
+                    <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+                </div>
+            </div>
+            <div id="wrapper">
+                <div id="sidebar">
+                    <div id="sidemenu" class="ui vertical menu">
+                        <a href="/" class="item active">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                        <a href="/aboutme" class="item">
+                            <i class="fas fa-user"></i>
+                            About Me
+                        </a>
+                        <div class="item">
+                            <i class="fas fa-code"></i>
+                            My Projects
+                            <div class="menu">
+                                <a href="#" class="item project_link">User Dashboard</a>
+                                <a href="#" class="item project_link">Egyptian War</a>
+                            </div>
+                        </div>
+                        <a href="https://github.com/danno131313" class="item">
+                            <i class="fab fa-github"></i>
+                            Github
+                        </a>
+                        <a href="https://www.linkedin.com/in/dankava13/" class="item">
+                            <i class="fab fa-linkedin-in"></i>
+                            LinkedIn
+                        </a>
+                    </div>
+                </div>
+                <div id="content">
+                    <h1><span>exceptional</span> software</h1>
+                    <h1>that just <span>works.</span></h1>
+                </div>
             </div>
         </div>
     </body>
@@ -88,6 +93,9 @@
         $('#projectmenu').dropdown({action: 'nothing'});
         $('.dashboardlink').click(function() {
             location.hash = 'dashboardproject';
+        });
+        $('#hamburgermenu').click(function() {
+            $('.ui.sidebar').sidebar('toggle');
         });
     </script>
 </html>

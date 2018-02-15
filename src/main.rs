@@ -22,5 +22,5 @@ fn files(file: PathBuf) -> Option<NamedFile> {
 }
 
 fn main() {
-    rocket::ignite().mount("/", routes![index, files]).launch();
+    rocket::ignite().mount("/", routes![index, files, about_me]).launch();
 }

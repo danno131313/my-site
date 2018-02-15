@@ -2,4 +2,4 @@ Cargo.lock
 target/
 semantic/
 node_modules/
-run
+.idea/

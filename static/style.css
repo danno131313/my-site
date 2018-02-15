@@ -1,13 +1,5 @@
-#aboutme p {
-    padding: 10px 0 0 0;
-}
-
-#myprojects h3 {
-    margin-bottom: 2em;
-}
-
 #wrapper {
-    height: 84%;
+    height: 100%;
     width: 100%;
     display: flex;
 }
@@ -15,23 +7,21 @@
 #content {
     background-image: url("code_blurred.png");
     background-size: cover;
-    padding-top: 3em;
-    padding-left: 12em;
 /*    display: flex;
     flex-direction: column;
     align-items: center;*/
     height: 100%;
     width: 100%;
-}
-
-#content h1 {
-    font-family: 'Courier';
-    font-size: 3em;
-    color: white;
+    overflow-y: hidden;
 }
 
 #content span {
     color: #939393;
+}
+
+#content h1 {
+    font-family: 'Courier';
+    color: white;
 }
 
 i {
@@ -42,58 +32,11 @@ i {
     justify-self: right;
 }
 
-#sidemenu {
-    display: flex;
-    flex-direction: column;
-    font-size: 1.15em;
-    border-top: 2px solid #303030;
-    width: 250px;
-    height: inherit;
-    background: #545454;
-}
-
-#sidebar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    width: 250px;
-    height: 100%;
-}
-
-.project_link {
-    color: #0F0F0F;
-}
-
-.projectlink {
-    margin: 2em 0 1em 0;
-    display: inline-block;
-    color: black;
-    font-weight: bold;
-    font-size: 1.1em;
-}
-
-#dashboardpic {
-    width: 100%;
-    height: auto;
-}
-
-body {
+.pusher {
+    display: block;
     background: #303030;
     height: 100vh;
-}
-
-img {
-    height: auto;
-    width: 40%;
-}
-
-.link {
-    padding-left: 3px;
-    color: black;
-}
-
-#homebtn:hover {
-    font-weight: bold;
+    overflow: hidden;
 }
 
 #header {
@@ -109,82 +52,95 @@ img {
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
     color: white;
-    margin-left: 10px;
 }
 
 #header h3 {
     margin-top: 0;
     padding-top: .5em;
-    padding-bottom: 1em;
-    margin-left: 40px;
     color: white;
     font-family: 'Roboto', sans-serif;
 }
 
-.contentbox {
-    background: white;
-    margin: 5%;
-    border: 1px solid black;
-    border-radius: .5em;
-    box-shadow: 2px 2px 3px grey;
-}
-
 @media only screen and (max-width: 480px) {
-    #navbar {
+    #sidebar {
         display: none;
+    }
+
+    #content {
+        box-sizing: border-box;
+        padding-top: 4em;
+        text-align: center;
+    }
+
+    #header {
+        height: auto;
+        box-sizing: border-box;
+        padding-top: 2em;
+        text-align: center;
     }
 
     #header h1 {
         font-size: 3em;
     }
 
-    #header {
-    }
-
     #header h3 {
+        margin-bottom: 0;
     }
 
     #hamburgermenu {
-        padding: 10px;
-        display: flex;
-        justify-content: flex-end;
+        padding: 0 0 10px 10px;
+        justify-self: end;
         width: 100%;
-    }
-
-    .contentbox {
-        padding: 5%;
     }
 }
 
 @media only screen and (min-width: 481px) {
-    #navbar {
-        padding: 0;
-        width: 40%;
-        display: flex;
-        align-self: flex-end;
-        justify-content: space-evenly;
-        border: none;
+    #header {
+        min-height: 150px;
+        height: 16%;
     }
 
-    #header {
-        height: 150px;
+    #header h1 {
+        margin-left: 10px;
+    }
+
+    #header h3 {
+        margin-left: 40px;
+    }
+
+    #content {
+        padding-top: 3em;
+        padding-left: 12em;
+    }
+
+    #content h1 {
+        font-size: 3em;
     }
 
     h1 {
         padding-top: .5em;
         font-size: 4em;
     }
-    
+
+    #sidemenu {
+        display: flex;
+        flex-direction: column;
+        font-size: 1.15em;
+        border-top: 2px solid #303030;
+        width: 250px;
+        height: inherit;
+        background: #545454;
+    }
+
+    #sidebar {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        width: 250px;
+        height: 100%;
+    }
+
     #hamburgermenu {
         display: none;
     }
-
-    .contentbox {
-        padding: 20px 10%;
-    }
-}
-
-
-.contentbox p {
-    margin-bottom: 15px;
 }
