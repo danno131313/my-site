@@ -18,79 +18,78 @@
     <link rel="stylesheet" href="aboutme.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
-<div class="ui sidebar thin inverted vertical menu">
-    <a href="/" class="item">
-        <i class="fas fa-home"></i>
-        Home
-    </a>
-    <a href="/aboutme" class="item active">
-        <i class="fas fa-user"></i>
-        About Me
-    </a>
-    <div class="item">
-        <i class="fas fa-code"></i>
-        My Projects
-        <div class="menu">
-            <a href="#" class="item project_link">User Dashboard</a>
-            <a href="#" class="item project_link">Egyptian War</a>
-        </div>
-    </div>
-    <a href="https://github.com/danno131313" class="item">
-        <i class="fab fa-github"></i>
-        Github
-    </a>
-    <a href="https://www.linkedin.com/in/dankava13/" class="item">
-        <i class="fab fa-linkedin-in"></i>
-        LinkedIn
-    </a>
-</div>
-<div class="pusher">
-    <div id="header">
-        <h1 class="title is-1">Daniel Kavanagh</h1>
-        <h3 class="subtitle">Software Engineer</h3>
-        <div id="hamburgermenu">
-            <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
-        </div>
-    </div>
-    <div id="wrapper">
-        <div id="sidebar">
-            <div id="sidemenu" class="ui vertical menu">
-                <a href="/" class="item">
-                    <i class="fas fa-home link"></i>
-                    <p>Home</p>
-                </a>
-                <a href="/aboutme" class="item active">
-                    <i class="fas fa-user link"></i>
-                    <p>About Me</p>
-                </a>
-                <div class="item">
-                    <i class="fas fa-code"></i>
-                    My Projects
-                    <div class="menu">
-                        <a href="#" class="item project">User Dashboard</a>
-                        <a href="#" class="item project">Egyptian War</a>
-                    </div>
-                </div>
-                <a href="https://github.com/danno131313" class="item">
-                    <i class="fab fa-github link"></i>
-                    <p>Github</p>
-                </a>
-                <a href="https://www.linkedin.com/in/dankava13/" class="item">
-                    <i class="fab fa-linkedin-in link"></i>
-                    <p>LinkedIn</p>
-                </a>
+    <div class="ui sidebar thin inverted vertical menu">
+        <a href="/" class="item">
+            <i class="fas fa-home"></i>
+            Home
+        </a>
+        <a href="/aboutme" class="item active">
+            <i class="fas fa-user"></i>
+            About Me
+        </a>
+        <div class="item">
+            <i class="fas fa-code"></i>
+            My Projects
+            <div class="menu">
+                <a href="#" class="item project_link">User Dashboard</a>
+                <a href="#" class="item project_link">Egyptian War</a>
             </div>
         </div>
-        <div id="content">
-            <h1>About me</h1>
-            <img src="me.jpg" alt="Photo of me">
-            <p>I'm a passionate, detail-oriented software developer with an interest in learning new things.</p>
+        <a href="https://github.com/danno131313" class="item">
+            <i class="fab fa-github"></i>
+            Github
+        </a>
+        <a href="https://www.linkedin.com/in/dankava13/" class="item">
+            <i class="fab fa-linkedin-in"></i>
+            LinkedIn
+        </a>
+    </div>
+    <div class="pusher">
+        <div id="header">
+            <h1 class="title is-1">Daniel Kavanagh</h1>
+            <h3 class="subtitle">Software Engineer</h3>
+            <div id="hamburgermenu">
+                <i class="fa fa-bars fa-2x" aria-hidden="true"></i>
+            </div>
+        </div>
+        <div id="wrapper">
+            <div id="sidebar">
+                <div id="sidemenu" class="ui vertical menu">
+                    <a href="/" class="item">
+                        <i class="fas fa-home link"></i>
+                        <p>Home</p>
+                    </a>
+                    <a href="/aboutme" class="item active">
+                        <i class="fas fa-user link"></i>
+                        <p>About Me</p>
+                    </a>
+                    <div class="item">
+                        <i class="fas fa-code"></i>
+                        My Projects
+                        <div class="menu">
+                            <a href="#" class="item project">User Dashboard</a>
+                            <a href="#" class="item project">Egyptian War</a>
+                        </div>
+                    </div>
+                    <a href="https://github.com/danno131313" class="item">
+                        <i class="fab fa-github link"></i>
+                        <p>Github</p>
+                    </a>
+                    <a href="https://www.linkedin.com/in/dankava13/" class="item">
+                        <i class="fab fa-linkedin-in link"></i>
+                        <p>LinkedIn</p>
+                    </a>
+                </div>
+            </div>
+            <div id="content">
+                <h1>About Me</h1>
+                <img src="me.jpg" alt="Photo of me">
+                <p>I'm a passionate, detail-oriented software developer with an interest in learning new things.</p>
+            </div>
         </div>
     </div>
-</div>
 </body>
-<script charset="utf-8">
-        $('.dropdown').dropdown({on: 'hover'});
+    <script charset="utf-8">
         $('#projectmenu').dropdown({action: 'nothing'});
         $('.dashboardlink').click(function() {
             location.hash = 'dashboardproject';

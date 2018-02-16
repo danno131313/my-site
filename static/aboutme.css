@@ -2,6 +2,7 @@
     height: 100%;
     width: 100%;
     display: flex;
+    background: #2b2b2b;
 }
 
 body {
@@ -59,8 +60,7 @@ i {
 
 .pusher {
     display: block;
-    background: #303030;
-    min-height: 500px;
+    min-height: 560px;
     height: 100%;
     overflow: hidden;
 }
@@ -93,9 +93,43 @@ i {
     }
 
     #content {
-        box-sizing: border-box;
-        padding-top: 4em;
+        overflow: scroll;
+    }
+
+    #content {
+        padding-top: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        color: #c5c5c5;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+    }
+
+    #content p {
+        font-size: 1.1em;
+    }
+
+    #content img {
+        margin-bottom: 10px;
+        border: 2px solid #cc7830;
+        border-radius: .3em;
+        max-width: auto;
+        height: 200px;
+
+    }
+
+    #content h1 {
+        margin-bottom: 25px;
+        font-family: 'Roboto';
+        padding-top: 10px;
+        line-height: 1.2em;
+        width: 80%;
         text-align: center;
+        border-bottom: 4px solid #cc7830;
+        color: #c5c5c5;
+        font-size: 3em;
     }
 
     #header {
@@ -145,6 +179,7 @@ i {
     }
 
     #content img {
+        margin-bottom: 10px;
         border: 2px solid #cc7830;
         border-radius: .3em;
         width: auto;
@@ -152,7 +187,13 @@ i {
 
     }
 
+    #content p {
+        font-size: 1.1em;
+    }
+
     #content h1 {
+        margin-bottom: 25px;
+        font-family: 'Roboto';
         width: intrinsic;           /* Safari/WebKit uses a non-standard name */
         width: -moz-max-content;    /* Firefox/Gecko */
         width: -webkit-max-content; /* Chrome */
