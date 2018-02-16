@@ -20,7 +20,17 @@ body {
 }
 
 #sidemenu .item p {
+    color: #b9b9b9;
     display: inline;
+    font-weight: 400;
+}
+
+#sidemenu .menu a {
+    color: #b9b9b9;
+}
+
+#sidemenu .my_projects, #sidemenu #my_projects:hover p {
+    color: #b9b9b9;
     font-weight: 400;
 }
 
