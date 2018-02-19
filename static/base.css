@@ -13,33 +13,17 @@ body {
     border-radius: none;
 }
 
-#content {
-    background-image: url("code_blurred.png");
-    background-size: cover;
-/*    display: flex;
-    flex-direction: column;
-    align-items: center;*/
-    height: 100%;
-    width: 100%;
-}
-
-#sidemenu .item p {
-    color: #b9b9b9;
-    display: inline;
-    font-weight: 400;
-}
-
 #sidemenu .menu a {
-    color: #b9b9b9;
+    color: #2b2b2b;
 }
 
 #sidemenu .my_projects, #sidemenu #my_projects:hover p {
-    color: #b9b9b9;
+    color: #2b2b2b;
     font-weight: 400;
 }
 
 #sidemenu .item.active .link {
-    color: #cc7830;
+    color: #dcf763;
 }
 
 #sidemenu .item.active p {
@@ -47,29 +31,22 @@ body {
 }
 
 #sidemenu .item:hover .link, #sidemenu .project:hover {
-    color: #cc7830;
-    font-weight: bold;
+    color: #dcf763;
 }
 
 #sidemenu .item:hover p {
     font-weight: bold;
 }
 
-#content span {
-    color: #cc7830;
-}
-
-#content h1 {
-    font-family: 'Courier';
-    color: white;
+#sidemenu .item p {
+    font-size: 1.2em;
+    color: #2b2b2b;
+    display: inline;
+    font-weight: 400;
 }
 
 i {
     margin-right: 7px;
-}
-
-#contact {
-    justify-self: right;
 }
 
 .pusher {
@@ -92,25 +69,19 @@ i {
     font-size: 3em;
     font-family: 'Roboto', sans-serif;
     font-weight: 100;
-    color: white;
+    color: #e1f2fe;
 }
 
 #header h3 {
     margin-top: 0;
     padding-top: .5em;
-    color: white;
+    color: #e1f2fe;
     font-family: 'Roboto', sans-serif;
 }
 
 @media only screen and (max-width: 767px) {
     #sidebar {
         display: none;
-    }
-
-    #content {
-        box-sizing: border-box;
-        padding-top: 4em;
-        text-align: center;
     }
 
     #header {
@@ -153,28 +124,14 @@ i {
         margin-left: 40px;
     }
 
-    #content {
-        padding-top: 3em;
-        padding-left: 12em;
-    }
-
-    #content h1 {
-        font-size: 3em;
-    }
-
-    h1 {
-        padding-top: .5em;
-        font-size: 4em;
-    }
-
     #sidemenu {
         display: flex;
         flex-direction: column;
         font-size: 1.15em;
-        border-top: 2px solid #303030;
+        border-top: 2px solid #dcf763;
         width: 250px;
         height: inherit;
-        background: #545454;
+        background: #848c8e;
     }
 
     #sidebar {
