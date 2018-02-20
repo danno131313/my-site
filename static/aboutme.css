@@ -1,8 +1,3 @@
-#content {
-    height: 100%;
-    width: 100%;
-}
-
 #content span {
     color: #cc7830;
 }
@@ -14,13 +9,7 @@
 
 @media only screen and (max-width: 767px) {
     #content {
-        overflow: scroll;
-    }
-
-    #content {
         padding-top: 15px;
-        padding-left: 20px;
-        padding-right: 20px;
         color: #c5c5c5;
         display: flex;
         flex-direction: column;
