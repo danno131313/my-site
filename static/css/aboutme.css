@@ -9,6 +9,8 @@
 
 @media only screen and (max-width: 767px) {
     #content {
+        white-space: no-wrap;
+        text-overflow: visible;
         padding-top: 15px;
         color: #c5c5c5;
         display: flex;
@@ -17,12 +19,18 @@
         align-items: center;
     }
 
-    #content p {
+    #content div {
+        flex: none;
         width: 90%;
         font-size: 1.1em;
     }
 
+    #content div p {
+        font-size: 1.1em;
+    }
+
     #content img {
+        flex: none;
         margin-bottom: 10px;
         border: 2px solid #cc7830;
         border-radius: .3em;
@@ -32,6 +40,7 @@
     }
 
     #content h1 {
+        flex: none;
         margin-bottom: 25px;
         font-family: 'Roboto';
         padding-top: 10px;
@@ -60,7 +69,7 @@
 
     }
 
-    #content p {
+    #content div p {
         font-size: 1.1em;
     }
 

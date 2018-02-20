@@ -6,3 +6,8 @@ authors = ["Danny Kavanagh <dankava13@gmail.com>"]
 [dependencies]
 rocket = "0.3.6"
 rocket_codegen = "0.3.6"
+
+[dependencies.rocket_contrib]
+version = "*"
+default-features = false
+features = ["tera_templates"]

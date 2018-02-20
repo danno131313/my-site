@@ -1,0 +1,25 @@
+{% extends "base" %}
+{% block title %}About Me{% endblock title %}
+{% block head %}
+<link rel="stylesheet" href="css/aboutme.css" type="text/css" media="screen" charset="utf-8">
+{% endblock head %}
+{% block content %}
+    <h1>About Me</h1>
+    <img src="me.jpg" alt="Photo of me">
+    <div>
+        <p>
+            My name is Daniel Kavanagh and I'm an enthusiastic, detail-oriented software engineer living near Seattle, Washington.
+        </p>
+        <p>
+            Ever since I was little I've loved building things and have had a fascination with the intricacies of how technology works.
+            It all started with years of constructing random contraptions out of Lego, and when I was introduced to computers, that
+            same need to tear it all apart and build something new never left. I began looking at the code for my favorite video games
+            and started changing values around. When I successfully increased my character's health by 1000% for the first time,
+            I knew programming was going to be something I would love to do (and I was so right!).
+        </p>
+        <p>
+            Today, I'm a full-time Linux user (with copious Windows experience) who enjoys nothing more than solving the puzzles
+            of programming, building cool apps, and automating everything. Check out my GitHub for some awesome projects!
+        </p>
+    </div>
+{% endblock content %}

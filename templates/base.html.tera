@@ -5,26 +5,27 @@
         <meta name="viewport" content="width=device-width" />
         <meta name="description" content="I'm a full stack developer living in Bellingham, WA.">
         <meta name="keywords" content="Danny, Daniel, Kavanagh, dankava, developer">
-        <title>Welcome</title>
+        <title>{% block title %}{% endblock title %}</title>
         <link href="https://fonts.googleapis.com/css?family=Roboto:100" rel="stylesheet">
         <link href="https://use.fontawesome.com/releases/v5.0.2/css/all.css" rel="stylesheet">
-        <link rel="stylesheet" href="normalize.css" type="text/css" media="all" />
+        <link rel="stylesheet" href="css/normalize.css" type="text/css" media="all" />
         <link rel="stylesheet" type="text/css" href="/semantic/dist/semantic.min.css">
         <script
-          src="https://code.jquery.com/jquery-3.1.1.min.js"
-          integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
-          crossorigin="anonymous"></script>
+                src="https://code.jquery.com/jquery-3.1.1.min.js"
+                integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
+                crossorigin="anonymous"></script>
         <script src="/semantic/dist/semantic.min.js"></script>
-        <link rel="stylesheet" href="base.css" type="text/css" media="screen" charset="utf-8">
-        <link rel="stylesheet" href="home.css" type="text/css" media="screen" charset="utf-8">
+        <link rel="stylesheet" href="css/base.css" type="text/css" media="screen" charset="utf-8">
+        {% block head %}
+        {% endblock head %}
     </head>
     <body>
         <div id="ui_sidebar" class="ui sidebar thin inverted vertical menu">
-            <a href="/" class="item active">
+            <a href="/" class="home item">
                 <i class="fas fa-home link"></i>
                 <p>Home</p>
             </a>
-            <a href="/aboutme" class="item">
+            <a href="/aboutme" class="aboutme item">
                 <i class="fas fa-user link"></i>
                 <p>About Me</p>
             </a>
@@ -45,7 +46,7 @@
                 <p>LinkedIn</p>
             </a>
         </div>
-        <div class="pusher">
+        <div id="pusher" class="pusher">
             <div id="header">
                 <h1 class="title is-1">Daniel Kavanagh</h1>
                 <h3 class="subtitle">Software Engineer</h3>
@@ -56,11 +57,11 @@
             <div id="wrapper">
                 <div id="sidebar">
                     <div id="sidemenu" class="ui vertical menu">
-                        <a href="/" class="item active">
+                        <a href="/" class="home item">
                             <i class="fas fa-home link"></i>
                             <p>Home</p>
                         </a>
-                        <a href="/aboutme" class="item">
+                        <a href="/aboutme" class="aboutme item">
                             <i class="fas fa-user link"></i>
                             <p>About Me</p>
                         </a>
@@ -83,19 +84,10 @@
                     </div>
                 </div>
                 <div id="content">
-                    <h1><span id="exceptional">exceptional</span> software</h1>
-                    <h1>that just <span>works</span>.</h1>
+                    {% block content %}{% endblock content %}
                 </div>
             </div>
         </div>
     </body>
-    <script charset="utf-8">
-        $('#projectmenu').dropdown({action: 'nothing'});
-        $('.dashboardlink').click(function() {
-            location.hash = 'dashboardproject';
-        });
-        $('#hamburgermenu').click(function() {
-            $('.ui.sidebar').sidebar('toggle');
-        });
-    </script>
+    <script src="js/main.js"></script>
 </html>
