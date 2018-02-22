@@ -1,12 +1,3 @@
-#content span {
-    color: #cc7830;
-}
-
-#content h1 {
-    font-family: 'Courier';
-    color: white;
-}
-
 @media only screen and (max-width: 767px) {
     #content {
         white-space: no-wrap;
@@ -55,7 +46,6 @@
 
 @media only screen and (min-width: 768px) {
     #content {
-        padding-top: 40px;
         padding-left: 50px;
         color: #c5c5c5;
     }
@@ -70,6 +60,7 @@
     }
 
     #content div p {
+        width: 65%;
         font-size: 1.1em;
     }
 
