@@ -83,6 +83,7 @@
                             <p>LinkedIn</p>
                         </a>
                     </div>
+                    <p id="emailcontact">Contact me: <a href="mailto:contact@dankava.com">contact@dankava.com</a></p>
                 </div>
                 <div id="content">
                     {% block content %}{% endblock content %}
