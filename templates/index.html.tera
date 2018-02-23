@@ -1,9 +1,0 @@
-{% extends "base" %}
-{% block title %}Welcome{% endblock title %}
-{% block head %}
-    <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" charset="utf-8">
-{% endblock head %}
-{% block content %}
-    <h1><span id="exceptional">exceptional</span> software</h1>
-    <h1>that just <span>works</span>.</h1>
-{% endblock content %}

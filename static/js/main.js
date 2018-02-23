@@ -1,15 +1,26 @@
-$(function($){
-   console.log("TEST!!");
-   switch(window.location.pathname){
-      case "/aboutme":  $(".aboutme").addClass("active"); console.log("ABOUT"); break;
-      case "/":  $(".home").addClass("active"); break;
-   }
+$('#navbar')
+  .sticky({
+    context: "#wrapper"
 });
 
-$('#projectmenu').dropdown({action: 'nothing'});
-$('.dashboardlink').click(function() {
-    location.hash = 'dashboardproject';
+$(window).scroll(function() {
+    var curr_offset = window.scrollY;
+    var win_height = $(window).height();
+    console.log(curr_offset);
+    if (curr_offset < win_height - 90) {
+        $('.home').addClass("active");
+        $('.aboutme').removeClass("active");
+    } else {
+        $('.aboutme').addClass("active");
+        $('.home').removeClass("active");
+    }
 });
-$('#hamburgermenu').click(function() {
-    $('.ui.sidebar').sidebar('toggle');
+
+$('a[href*="#"]').click(function(event) {
+    var target = $(this.hash);
+    console.log(this);
+    event.preventDefault();
+    $('html, body').animate({
+        scrollTop: target.offset().top
+    }, 800);
 });
