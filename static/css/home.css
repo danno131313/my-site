@@ -25,7 +25,6 @@
     background: #cc7830;
     padding: 0;
     margin: 0;
-    margin-top: 160px;
 }
 
 #index-btn:hover {
@@ -50,6 +49,10 @@
     #navbar.fixed.top + #content {
         margin-top: 46px;
     }
+
+    #index-btn {
+        margin-top: 70px;
+    }
 }
 
 @media only screen and (min-width: 768px) {
@@ -68,8 +71,7 @@
         margin-top: 52px;
     }
 
-    h1 {
-        padding-top: .5em;
-        font-size: 4em;
+    #index-btn {
+        margin-top: 120px;
     }
 }
