@@ -22,10 +22,10 @@
 }
 
 #about_me div p {
-    width: 65%;
+    width: 70%;
     font-size: 1.2em;
-    font-family: 'Roboto';
-    font-weight: 600;
+    font-family: 'Helvetica';
+    font-weight: 400;
 }
 
 #about_me h1 {
@@ -43,50 +43,9 @@
     #about_me div p {
         width: 90%;
         font-size: 1em;
-        font-family: 'Roboto';
-        font-weight: 600;
     }
 }
 
 @media only screen and (min-width: 768px) {
-    #about_me {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        padding-top: 52px;
-        color: #c5c5c5;
-    }
 
-    #about_me img {
-        margin-bottom: 30px;
-        border: 2px solid #cc7830;
-        border-radius: .3em;
-        width: auto;
-        height: 200px;
-
-    }
-
-    #about_me div {
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-
-    #about_me div p {
-        width: 80%;
-        font-size: 1.2em;
-        font-family: 'Roboto';
-        font-weight: 600;
-    }
-
-    #about_me h1 {
-        margin-bottom: 25px;
-        font-family: 'Roboto';
-        width: intrinsic;           /* Safari/WebKit uses a non-standard name */
-        width: -moz-max-content;    /* Firefox/Gecko */
-        width: -webkit-max-content; /* Chrome */
-        border-bottom: 4px solid #cc7830;
-        color: #c5c5c5;
-        font-size: 4em;
-    }
 }
