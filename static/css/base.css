@@ -55,6 +55,10 @@
     justify-content: center;
 }
 
+#navbar .item:active {
+    outline: none;
+}
+
 #navbar .item:hover, #navbar .item.active {
     border-bottom: 2px solid #dcf763;
 }

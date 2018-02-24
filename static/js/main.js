@@ -25,8 +25,8 @@ $(window).scroll(function() {
 // Smooth scrolling for a tags to hash locations
 $('a[href*="#"]').click(function(event) {
     var target = $(this.hash);
-    console.log(this);
     event.preventDefault();
+    this.blur();
     $('html, body').animate({
         scrollTop: target.offset().top
     }, 800);
