@@ -4,6 +4,7 @@ $('#navbar')
 });
 
 var height = $(window).height();
+var width = $(window).width();
 $('#content').css('height', height - 200);
 
 // Navbar active item logic
@@ -46,6 +47,6 @@ $('a[href*="#"]').click(function(event) {
 //Popup functionality
 $('a.popup').popup();
 
-$('.parallax-window').parallax({imageSrc: 'code_blurred.jpg'});
+$('.parallax-window').parallax({imageSrc: 'code_blurred.jpg', naturalHeight: height, naturalWidth: width});
 
 $('.blurring.dimmable.image').dimmer({on: 'hover'});
