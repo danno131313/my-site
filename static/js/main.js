@@ -6,19 +6,28 @@ $('#navbar')
 // Navbar active item logic
 $(window).scroll(function() {
     var curr_offset = window.scrollY;
-    var win_height = $(window).height();
+    var home = 0;
+    var about_me = $('#about_me').position().top;
+    var projects = $('#projects').position().top;
+    var contact = $('#contact').position().top;
+    var height = $(window).height();
 
-    // If phone is sideways, add some buffer
-    if (win_height < 400) {
-        win_height += 200;
-    }
+    var homeBreak = about_me / 2;
+    var aboutBreak = ((projects - about_me) / 2) + about_me;
+    var projectsBreak = ((contact - projects) / 2) + projects;
 
-    if (curr_offset < win_height - 90) {
+    if (curr_offset < homeBreak) {
+        $('#navbar .item').removeClass("active");
         $('.home').addClass("active");
-        $('.aboutme').removeClass("active");
-    } else {
+    } else if (curr_offset >= homeBreak && curr_offset < aboutBreak) {
+        $('#navbar .item').removeClass("active");
         $('.aboutme').addClass("active");
-        $('.home').removeClass("active");
+    } else if (curr_offset >= aboutBreak && curr_offset < projectsBreak) {
+        $('#navbar .item').removeClass("active");
+        $('.projects-nav').addClass("active");
+    } else {
+        $('#navbar .item').removeClass("active");
+        $('.contact-nav').addClass("active");
     }
 });
 
@@ -31,3 +40,10 @@ $('a[href*="#"]').click(function(event) {
         scrollTop: target.offset().top
     }, 800);
 });
+
+//Popup functionality
+$('a.popup').popup();
+
+$('.parallax-window').parallax({imageSrc: 'code_blurred.jpg'});
+
+$('.blurring.dimmable.image').dimmer({on: 'hover'});

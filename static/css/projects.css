@@ -1,0 +1,62 @@
+.ui.cards::after {
+    content: none;
+}
+
+#projectgrid {
+    width: 100%;
+    justify-content: space-evenly;
+    margin: 0;
+}
+
+#projects {
+    background: #2b2b2b;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#projects h1 {
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-family: 'Roboto';
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+    border-bottom: 4px solid #cc7830;
+    color: #c5c5c5;
+    font-size: 4em;
+}
+
+#projects .project-tags {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    padding: 15px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+}
+
+#projects .project-tags .project-tag {
+    padding: 10px;
+    margin: 5px;
+    background: #545454;
+    border: 1px solid #2b2b2b;
+    border-radius: .5em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 30px;
+    width: intrinsic;           /* Safari/WebKit uses a non-standard name */
+    width: -moz-max-content;    /* Firefox/Gecko */
+    width: -webkit-max-content; /* Chrome */
+}
+
+@media only screen and (max-width: 767px) {
+    #projects h1 {
+        margin-top: 70px;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+
+}

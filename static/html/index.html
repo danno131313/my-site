@@ -15,9 +15,12 @@
             integrity="sha256-hVVnYaiADRTO2PzUGmuLJr8BLUSjGIZsDYGmIJLv2b8="
             crossorigin="anonymous"></script>
     <script src="/semantic/dist/semantic.min.js"></script>
+    <script src="js/parallax.min.js" charset="utf-8"></script>
     <link rel="stylesheet" href="css/base.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/aboutme.css" type="text/css" media="screen" charset="utf-8">
     <link rel="stylesheet" href="css/home.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/projects.css" type="text/css" media="screen" charset="utf-8">
+    <link rel="stylesheet" href="css/contact.css" type="text/css" media="screen" charset="utf-8">
 </head>
 <body>
 <div id="header">
@@ -35,16 +38,16 @@
             <p class="desktop-only">About Me</p>
             <p class="mobile-only">About</p>
         </a>
-        <a class="item"  href="#">
+        <a class="projects-nav item"  href="#projects">
             <i class="fas fa-code link"></i>
             <p class="desktop-only">My Projects</p>
             <p class="mobile-only">Projects</p>
         </a>
-        <a href="https://github.com/danno131313" class="item">
+        <a href="#contact" class="contact-nav item">
             <p>Contact</p>
         </a>
     </div>
-    <div id="content">
+    <div id="content" class="parallax-window" data-parallax="scroll" data-image-src="code_blurred.jpg">
         <h1><span id="exceptional">exceptional</span> software</h1>
         <h1>that just <span>works</span>.</h1>
         <a href="#about_me" id="index-btn" class="circular ui icon button">
@@ -70,6 +73,77 @@
                 of programming, building cool apps, and automating everything. Check out my GitHub for some awesome projects!
             </p>
         </div>
+    </div>
+    <div id="projects">
+        <h1>My Projects</h1>
+        <div class="ui link cards" id="projectgrid">
+            <a href="http://userdashboard.dankava.com" class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content project-tags">
+                            <p class="project-tag">Python</p>
+                            <p class="project-tag">Django</p>
+                            <p class="project-tag">MySQL</p>
+                            <p class="project-tag">CRUD</p>
+                            <p class="project-tag">ORMs</p>
+                            <p class="project-tag">Semantic-UI</p>
+
+                        </div>
+                    </div>
+                    <img src="userdashboard.png">
+                </div>
+                <div class="content">
+                        <div class="header">User Dashboard</div>
+                    <div class="description">Add, edit, remove, and message users! A full-CRUD application.</div>
+                </div>
+            </a>
+            <a href="https://github.com/danno131313/egyptian-war" class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content project-tags">
+                            <p class="project-tag">Rust</p>
+                            <p class="project-tag">NCurses</p>
+                        </div>
+                    </div>
+                    <img src="egyptianwar.png">
+                </div>
+                <div class="content">
+                    <div class="header">Egyptian War</div>
+                    <div class="description">A fun, high-intensity card game relying on speed. Requires two players.</div>
+                </div>
+            </a>
+            <a href="https://github.com/danno131313/MEAN-tasklist" class="card">
+                <div class="blurring dimmable image">
+                    <div class="ui dimmer">
+                        <div class="content project-tags">
+                            <p class="project-tag">JavaScript</p>
+                            <p class="project-tag">Angular 5</p>
+                            <p class="project-tag">MongoDB</p>
+                            <p class="project-tag">Express</p>
+                            <p class="project-tag">CRUD</p>
+                            <p class="project-tag">Mongoose</p>
+                            <p class="project-tag">API</p>
+                        </div>
+                    </div>
+                    <img src="bucketlist.png">
+                </div>
+                <div class="content">
+                    <div class="header">Bucket List</div>
+                    <div class="description">An app to help keep track of your bucket list! Tag another user to share in your adventure.</div>
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="contact">
+        <h1>Contact Me</h1>
+        <div id="contact-grid">
+            <a href="mailto:dan.kava13@gmail.com" data-content="Email" class="popup"><i id="email" class="far fa-4x fa-envelope"></i></a>
+            <a href="https://www.linkedin.com/in/dankava13/" data-content="LinkedIn" class="popup"><i id="linkedin" class="fab fa-4x fa-linkedin-in"></i></a>
+            <a href="https://github.com/danno131313" data-content="Github" class="popup"><i id="github" class="fab fa-4x fa-github"></i></a>
+        </div>
+    </div>
+    <div id="footer">
+        <p>Copyright© Daniel Kavanagh, 2018. All rights reserved.</p>
     </div>
 </div>
 </body>
