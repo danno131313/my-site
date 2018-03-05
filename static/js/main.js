@@ -3,6 +3,9 @@ $('#navbar')
     context: "#wrapper"
 });
 
+var height = $(window).height();
+$('#content').css('height', height - 200);
+
 // Navbar active item logic
 $(window).scroll(function() {
     var curr_offset = window.scrollY;
@@ -10,7 +13,6 @@ $(window).scroll(function() {
     var about_me = $('#about_me').position().top;
     var projects = $('#projects').position().top;
     var contact = $('#contact').position().top;
-    var height = $(window).height();
 
     var homeBreak = about_me / 2;
     var aboutBreak = ((projects - about_me) / 2) + about_me;
