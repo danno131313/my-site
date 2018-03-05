@@ -47,6 +47,6 @@ $('a[href*="#"]').click(function(event) {
 //Popup functionality
 $('a.popup').popup();
 
-$('.parallax-window').parallax({imageSrc: 'code_blurred.jpg', naturalHeight: height, naturalWidth: width});
+$('.parallax-window').parallax({imageSrc: 'code_blurred.jpg', naturalWidth: width, speed: .2});
 
 $('.blurring.dimmable.image').dimmer({on: 'hover'});
